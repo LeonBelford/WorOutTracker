@@ -1,6 +1,6 @@
 using FitnessTracker.Components;
-using FitnessTracker.Components.Pages.FitnessTracker.FitnesDbContext;
-using FitnessTracker.Components.Pages.FitnessTracker.FitnessController;
+using FitnessTracker.Database;
+using FitnessTracker.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,7 +12,7 @@ builder.Services.AddDbContext<PersonDbContext>(options =>
 {
 options.UseSqlite("Data Source = ProductsDB.db");
 });
-builder.Services.AddScoped<PersonController>();
+builder.Services.AddScoped<PersonService>();
 
 var app = builder.Build();
 

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace FitnessTracker;
+namespace FitnessTracker.Models;
 
 public class SetsRepsTracker
 {
@@ -13,5 +13,4 @@ public class SetsRepsTracker
     public int Set { get { return _set; } private set { _set = value; } }
     public int Reps { get { return _reps; } private set { _reps = value; } }
     public DateTime CurrentDay { get { return _currentDay; } private set { _currentDay = value; } }
-
 }

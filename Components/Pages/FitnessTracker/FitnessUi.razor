@@ -1,0 +1,40 @@
+﻿@page "/"
+@rendermode InteractiveServer
+
+<h3>FitnessUi</h3>
+<div>
+    <p>
+        <span> Ich weis nicht, hier soll eine Fittnes App hin, mal sehen was ich daraus baue...</span>
+    </p>
+</div>
+
+<div>
+    <input type="text" placeholder="Name" class="input" @bind="personName" />
+    <input type="number" placeholder="Type here" class="input" @bind="weight" />
+    <button type="button" class="button" @onclick="CreatePersonObj"> Enter New Person </button>
+</div>
+
+<div class="overflow-x-auto">
+    <table class="table">
+        <!-- head -->
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Wieght</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- row 1 -->
+            @foreach (var p in Person)
+            {
+                <tr>
+                    <td>@p.Id</td>
+                    <td>@p.Name</td>
+                    <td>@p.Weight</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

@@ -1,11 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using Microsoft.AspNetCore.Components.Forms;
-using FitnessTracker;
-using System.Threading.Tasks;
-using FitnessTracker.Components.Pages.FitnessTracker.FitnessController;
-using System.Reflection.PortableExecutable;
 
-namespace FitnessTracker.Components.Pages.FitnessTracker;
+namespace FitnessTracker.Models;
 
 public class TrackedPerson
 {

@@ -1,7 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using Microsoft.AspNetCore.Identity;
 
-namespace FitnessTracker;
+namespace FitnessTracker.Models;
 
 public class WorkoutTracker
 {

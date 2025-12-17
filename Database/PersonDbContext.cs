@@ -1,7 +1,6 @@
-
-using FitnessTracker.Components.Pages.FitnessTracker;
+namespace FitnessTracker.Database;
+using FitnessTracker.Models;
 using Microsoft.EntityFrameworkCore;
-namespace FitnessTracker.Components.Pages.FitnessTracker.FitnesDbContext;
 
 public class PersonDbContext : DbContext
 {
@@ -12,7 +11,6 @@ public class PersonDbContext : DbContext
     }
     public DbSet<WorkoutTracker> WorkoutTracker { get; set; }
     public DbSet<TrackedPerson> TrackedPerson { get; set; }
-
 
 
 }
